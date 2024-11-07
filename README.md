@@ -1,11 +1,11 @@
-## Employee Attrition Analysis Using IBM HR Analytics Dataset
+# Employee Attrition Analysis Using IBM HR Analytics Dataset
 Dataset Source
 [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
 
-#Introduction:
+## Introduction
 <br>This project investigates the factors driving employee attrition within various departments at a fictional company. The goal is to identify key drivers, such as job satisfaction, income, work-life balance, and performance, and propose actionable recommendations for improving employee retention.
 
-#Analysis of Factors
+## Analysis of Factors
 <br>**1. High Attrition in Human Resources with Low Job Satisfaction**
 <br>•	Attrition rate in HR is 45.45% for employees with job satisfaction = 1, despite reasonable income levels.
 <br>•	High turnover suggests that dissatisfaction in HR is driven by factors beyond salary, such as workplace environment or lack of engagement.
@@ -37,7 +37,7 @@ Dataset Source
 
 ![Alt text for image](https://github.com/jtmtran/Employee_Attrition_Project/blob/ab4a49ad895f67190540f3365074df58c6931282/Performance%20Rating.png)
 
-<br>#Key Insights**
+## Key Insights
 <br>**Income vs. Attrition**
 <br>•	Employees who left the company earned an average of $4,787, significantly lower than those who stayed ($6,832).
 <br>•	Conclusion: Higher income contributes to retention, but it’s not the sole factor. Addressing non-monetary factors such as work-life balance and stress is essential.
@@ -57,22 +57,22 @@ Dataset Source
 
 ![Alt text for image](https://github.com/jtmtran/Employee_Attrition_Project/blob/ab4a49ad895f67190540f3365074df58c6931282/Years%20at%20Company%20and%20Attrition.png)
 
-<br>**Recommendations**
-<br>1. Human Resources and Sales: Address Work-Life Balance and Stress
+## Recommendations
+<br>**1. Human Resources and Sales: Address Work-Life Balance and Stress**
 <br>•	Implement flexible work arrangements and time-off policies to improve work-life balance, especially in Sales and HR.
 <br>•	Consider reducing overtime or offering additional compensation for extra hours.
 
-<br>2. Focus on Career Development
+<br>**2. Focus on Career Development**
 <br>•	Provide career growth opportunities and promotions to prevent attrition in long-tenured employees.
 <br>•	Offer mentorship programs for employees who have been with the company for 5+ years.
 
-<br>3. Implement Training Programs
+<br>**3. Implement Training Programs**
 <br>•	Ensure that employees receive regular training (5-6 times per year) to improve engagement and satisfaction.
 <br>•	Align training with career goals to encourage employees to stay with the company.
 
-<br>4. Tailor Compensation Reviews for Low-Income Roles
+<br>**4. Tailor Compensation Reviews for Low-Income Roles**
 <br>•	Review compensation packages for low-income roles such as Sales Representatives and HR to improve retention.
 <br>•	Offer raises or financial incentives to reduce turnover in these groups.
 
-<br>#Conclusion
+## Conclusion
 <br>By focusing on improving job satisfaction, work-life balance, and career development opportunities, companies can significantly reduce attrition. Implementing regular training and aligning employee development with long-term career goals will lead to higher retention rates and a more engaged workforce.
