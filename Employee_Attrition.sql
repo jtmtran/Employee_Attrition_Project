@@ -78,8 +78,10 @@ select
 from employee_attrition;
 
 #average monthly income
-select avg(MonthlyIncome) as AvgMonthlyIncome
-from employee_attrition;
+select Attrition,
+	avg(MonthlyIncome) as AvgIncome
+from employee_attrition
+group by Attrition;
 
 #find the department with the highest attrition
 select Department, count(*) as AttritionCount
@@ -124,7 +126,8 @@ group by Attrition;
 
 #Analyze years at company versus attrition
 select YearsAtCompany, count(*) as NumEmployees,
-	sum(case when Attrition = 'yes' then 1 else 0 end) as NumAttrition
+	sum(case when Attrition = 'yes' then 1 else 0 end) as NumAttrition,
+    (sum(case when Attrition = 'yes' then 1 else 0 end))/count(*)*100 as AttritionRate
 from employee_attrition
 group by YearsAtCompany
 order by YearsAtCompany;
@@ -286,13 +289,12 @@ group by Department, JobSatisfaction, RelationshipSatisfaction
 order by JobSatisfaction;
 
 #2. Explore professional development within the R&D department
-select Department, TrainingTimesLastYear, count(*) as NumEmployees,
+select Department,TrainingTimesLastYear, count(*) as NumEmployees,
 	sum(case when Attrition = 'yes' then 1 else 0 end) as NumAttrition,
     (sum(case when Attrition = 'yes' then 1 else 0 end))/count(*) *100 as AttritionRate
 from employee_attrition
-where Department = 'Research & Development'
-group by Department, TrainingTimesLastYear
-order by TrainingTimesLastYear desc;
+group by Department,TrainingTimesLastYear
+order by TrainingTimesLastYear;
 
 #2. Explore career growth opportunities within the R&D department
 select Department, YearsAtCompany, YearsInCurrentRole, YearsSinceLastPromotion,
@@ -326,9 +328,24 @@ group by Department, YearsAtCompany, YearsInCurrentRole, YearsSinceLastPromotion
 having (sum(case when Attrition = 'yes' then 1 else 0 end))/count(*) *100 > 40
 order by AttritionRate desc;
 
-select TrainingTimesLastYear, count(*) as NumEmployees,
-	sum(case when Attrition = 'yes' then 1 else 0 end) as NumAttrition,
-    (sum(case when Attrition = 'yes' then 1 else 0 end))/count(*) *100 as AttritionRate
+
+select Department, PerformanceRating, Attrition, count(*) as NumEmployees,
+	sum(case when Attrition = 'Yes' then 1 else 0 end) as NumAttrition,
+	(sum(case when Attrition = 'yes' then 1 else 0 end))/count(*)*100 as AttritionRate
 from employee_attrition
-group by TrainingTimesLastYear
-order by TrainingTimesLastYear;
+group by 1, 2, 3;
+
+select Attrition, Gender, count(*) as NumEmployees,
+count(case when Attrition ='Yes' then Attrition else 0 end) as NumAttrition,
+(count(case when Attrition = 'Yes' then Attrition else 0 end))/count(*)*100 as AttritionRate
+from employee_attrition
+group by 1, 2;
+
+select Attrition, Gender, count(*) as NumEmployees,
+sum(case when Attrition ='Yes' then 1 else 0 end) as NumAttrition,
+(sum(case when Attrition = 'Yes' then 1 else 0 end))/count(*)*100 as AttritionRate
+from employee_attrition
+group by 1, 2;
+
+select * from employee_attrition
+where Attrition = 'YeS';
