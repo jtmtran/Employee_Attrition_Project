@@ -7,6 +7,12 @@ Dataset Source
 
 ## Analysis of Factors
 <br>**1. High Attrition in Human Resources with Low Job Satisfaction**
+```sql
+SELECT Department, AVG(Income) AS Avg_Income, JobSatisfaction
+FROM Employees
+WHERE Attrition = 'Yes'
+GROUP BY Department, JobSatisfaction;
+```
 <br>•	Attrition rate in HR is 45.45% for employees with job satisfaction = 1, despite reasonable income levels.
 <br>•	High turnover suggests that dissatisfaction in HR is driven by factors beyond salary, such as workplace environment or lack of engagement.
 
