@@ -122,6 +122,9 @@ ORDER BY YearsAtCompany;
 <br>•	Conclusion: Focusing on early retention strategies and enhancing the employee experience during the first year can reduce turnover.
 
 ## Recommendations
+[Link to Dashboard](https://public.tableau.com/views/Employee_Attrition_and_Retention_Insights/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Alt text for image](https://github.com/jtmtran/Employee_Attrition_Project/blob/10ff88cad450dc4c6cd8b1911d57767a77689deb/Dashboard%201.png)
+
 <br>**1. Human Resources and Sales: Address Work-Life Balance and Stress**
 <br>•	Implement flexible work arrangements and time-off policies to improve work-life balance, especially in Sales and HR.
 <br>•	Consider reducing overtime or offering additional compensation for extra hours.
