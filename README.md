@@ -147,3 +147,9 @@ ORDER BY YearsAtCompany;
 
 ## Conclusion
 <br>By focusing on improving job satisfaction, work-life balance, and career development opportunities, companies can significantly reduce attrition. Implementing regular training and aligning employee development with long-term career goals will lead to higher retention rates and a more engaged workforce.
+
+## Contact
+- **Name**: Jennie Tran
+- **Email**: jennie.tmtran@gmail.com
+- **LinkedIn**: [jennietmtran](www.linkedin.com/in/jennietmtran)
+- **GitHub**: [jtmtran](https://github.com/jtmtran)
