@@ -25,7 +25,7 @@ The dashboard allows users to explore attrition patterns across various dimensio
 - Goal: Identify factors contributing to attrition and provide actionable recommendations.
 
 ### 2. SQL Analysis
-
+The SQL queries used for data analysis are available in the sql_queries folder.
 SQL was used extensively for data cleaning, exploration, and analysis. Below are some highlights:
 
 Key Queries
