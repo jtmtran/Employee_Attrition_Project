@@ -1,4 +1,4 @@
-# Employee Attrition Analysis Using IBM HR Analytics Dataset
+# Employee Attrition Analysis
 ![employee-churn](https://github.com/user-attachments/assets/bc9cbf6e-62d7-4c3c-8b67-42e91f9a34c6)
 
 ## Overview
