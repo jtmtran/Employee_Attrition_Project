@@ -25,28 +25,10 @@ The dashboard allows users to explore attrition patterns across various dimensio
 - Goal: Identify factors contributing to attrition and provide actionable recommendations.
 
 ### 2. SQL Analysis
-The SQL queries used for data analysis are available in the sql_queries folder.
+The SQL queries used for data analysis are available in the Employee_Attrition.sql.
 SQL was used extensively for data cleaning, exploration, and analysis. Below are some highlights:
 
-Key Queries
-- Attrition by Department:
- ```sql
-SELECT Department, COUNT(*) AS Total,
-       SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) AS Attrition_Count,
-       ROUND((SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) * 100.0) / COUNT(*), 2) AS Attrition_Rate
-FROM Employee_Data
-GROUP BY Department
-ORDER BY Attrition_Rate DESC;
-```
-	
-- Attrition vs. Job Satisfaction:
- ```sql
- SELECT JobSatisfaction, COUNT(*) AS Total_Employees,
-       SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) AS Attrition_Count
-FROM Employee_Data
-GROUP BY JobSatisfaction
-ORDER BY Attrition_Count DESC;
- ```
+**Key Queries:**
 - High Attrition in Human Resources with Low Job Satisfaction**
 	- Attrition rate in HR is 45.45% for employees with job satisfaction = 1, despite reasonable income levels.
 ```sql
