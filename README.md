@@ -129,6 +129,11 @@ Insight: **Sales Executives and Laboratory Technicians** show the highest rates 
 
 Insight: Employees with lower job satisfaction (rated 1 or 2) are more likely to leave.
 
+Color Legend:
+- Red: High attrition rate (>50%).
+- Blue: Stable attrition rate (25–50%).
+- Green: Low attrition rate (<25%).
+
 **- Attrition by Age and Gender:**
 <img width="1366" alt="Screenshot 2025-01-13 at 11 02 19 PM" src="https://github.com/user-attachments/assets/19c0f951-45e5-4ee3-a293-1e28607311fa" />
 
@@ -149,7 +154,7 @@ Color Legend:
 Insight: Employees in the lowest income quartile are more likely to leave.
 
 ## How to Use
-1. Access SQL Queries: All SQL scripts are available in the sql_queries/ folder.
+1. Access SQL Queries: All SQL scripts are available in the Employee_Attrition.sql file.
 2. View the Dashboard: Visit the Tableau dashboard link provided above.
 3. Download the Dataset: Dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
  
